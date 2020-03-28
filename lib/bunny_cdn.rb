@@ -1,5 +1,3 @@
-# typed: strict
-
 require "zeitwerk"
 
 loader = Zeitwerk::Loader.for_gem
