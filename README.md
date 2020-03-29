@@ -20,7 +20,32 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+### Configuration
+
+```
+BunnyCDN.configure do |config|
+  config.access_key = "1234567key"
+  config.storage_access_key = "1234567key-storage"
+end
+```
+
+### Operations
+
+#### Purge
+
+To purge a URL, just call `purge`:
+
+```
+BunnyCDN.purge('https://megafono.host/21345')
+```
+
+#### Upload
+
+To upload a file, call `upload`:
+
+```
+BunnyCDN.upload('my-zone-name', 'file-name', Rails.root.join('/uploads/my-phone.jpg'))
+```
 
 ## Development
 
